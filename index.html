@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Osare Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5283c5aa45.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- 参考サイト -->
+    <!-- https://danigemma.com -->
+</head>
+
+<body>
+    <header class="head">
+        <ul class="head_nav">
+            <li class="items">ITEM</li>
+            <li class="items">COLLECTION</li>
+            <li class="items">JOURNAL</li>
+            <li class="items">SHOP</li>
+            
+            <li class="icon1"><i class="far fa-user fa-2x"></i></li>
+            <li class="icon2"><i class="far fa-heart fa-2x"></i></li>
+            <li class="icon3"><i class="fas fa-shopping-bag fa-2x"></i></li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="slideShow">
+
+            <div class="main">
+                <img>
+            </div>
+
+            <nav>
+                <ul>
+                    <li id="play">Play</li>
+                    <li id="pause" class="hidden">Pause</li>
+                    <li id="prev">&lt;</li>
+                    <li id="next">&gt;</li>
+                </ul>
+            </nav>
+            <!-- javaScriptで小要素は実装 -->
+            <ul class="thumbnails"></ul>
+        </section>
+
+        <div class="home_item">
+            <header class="title">
+                <h1>ITEM</h1>
+                <p>all items ></p>
+            </header>
+
+            <!-- javaScriptで小要素は実装 -->
+            <ul class="item_photo"></ul>
+        </div>
+
+        <div class="home_jounal" >
+            <header class="title" id='jounal'>
+                <h1>JOURNAL</h1>
+                <p>all jounar ></p>
+            </header>
+
+            <ul class="jounal_photo"></ul>
+        </div>
+
+        <div class="home_letter" >
+            <header class="title" id='letter'>
+                <h1>NEWS LETTER</h1>
+            </header>
+
+            <form action="#" method="POST">
+                    <input type="text" name="mail" class="mail_form">
+                    <div class='enter_btn'>ENTER</div>
+            </form>
+        </div>
+
+        <div class="pride">
+            <ul class="pride_row">
+                <li class="pride_list">
+                    <i class="fas fa-box-open fa-3x"></i>
+                    <h1>SHIPPING</h1>
+                    <p>佐川急便にて全国一律送料400円でお届けします（一部地域・離島を除く）</p>
+                <li class="pride_list">
+                    <i class="fas fa-hourglass-start fa-3x"></i>
+                    <h1>RETURN</h1>
+                    <p>商品到着から7日以内のご購入の商品につきましては返品・交換をお受けしております</p>
+                <li class="pride_list">
+                    <i class="fas fa-tools fa-3x"></i>
+                    <h1>MAINTENANCE</h1>
+                    <p>お買い上げいただいた商品を長くご使用いただけるよう修理（有償）を承っております</p>
+                <li class="pride_list">
+                    <i class="fas fa-cart-plus fa-3x"></i>
+                    <h1>POINT</h1>
+                    <p>ご購入金額の1％（1ポイント1円としてご利用可）をポイントとして還元しております</p>
+                </li class="pride_list">
+            </ul>
+        </div>
+
+    </main>
+
+
+    <footer>
+        <ul class="foo">
+            <li><a href="#">SHOPPING GUIDE</a></li>
+            <li><a href="#">TERM & CONDITIONS</a></li>
+            <li><a href="#">PRIVACY POLICY</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </footer>
+    
+    <script src="main.js"></script>
+</body>
+</html>
